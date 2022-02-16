@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice site</title>
+</head>
+<style>
+    
+*{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#logo{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 12%;
+
+
+}
+#logocircle{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-right: 3px;
+}
+#squre{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 3px;
+}
+#home{
+
+    list-style-type: none;
+    margin: 0%;
+    margin-right: 24px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+li{
+    cursor: pointer;
+    padding: 20px; 
+}
+li:hover{
+    background-color: aquamarine;
+    
+}
+#search{
+    margin-right: 12%;
+    display: inline-flex;   
+    justify-content: center;
+    position: relative; 
+    top: -3px;
+    
+}
+#search1{
+    width:30px;
+    height: 30px;
+    background-color: brown;
+    border-radius: 100%;
+    margin-left: 2px;
+    
+}
+
+#searchtex{
+    padding-left: 5px;
+    padding-top: 6px;
+    font-weight: bold;
+}
+#logoline{
+    font-weight: bold;
+}
+.blog{
+    width: 80px;
+    height: 25px;
+    background-color:crimson;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: -5px;
+}
+#cent{
+    height: fit-content;
+    position: absolute;
+    top: 25%;
+    color: gray;
+    
+}
+#img1{
+    margin: 0%;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.img1{
+    width: 100%;
+    height: 400px;
+}
+#good{
+    color: white;
+    font-size: 35px;
+    padding-left: 65px;
+    font-family:'Courier New', Courier, monospace;
+}
+.good{
+    color: white;
+    padding-top: 8px;
+}
+#learn{
+    height: 45px;
+    width: 250px;
+    margin-left: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    background-color:coral;
+    color: white;
+    padding-top: 7px;
+    border: none;
+
+}
+#circleimg1{
+    position: absolute;
+    right: 10%;
+    top: 25em;
+    display: inline-flex;
+    padding-left: 2px;
+
+
+}
+.circleimg1{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: grey;
+    margin-left: 1px;
+
+}
+#redcircle{
+    border: red solid 1px;
+    height: 14px;
+    width: 14px;
+}
+
+
+#ours{
+    position: absolute;
+    top: 30em;
+    left: 45%;
+    height: 30px;
+    width: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: crimson;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+#section2{
+    height: fit-content;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list{
+    /* height: 280px; */
+    /* width: 250; */
+    text-align: center;
+    left: 10px;
+    margin-top: 2em;
+    margin-left: 6% ;
+
+}
+
+.imgci2{
+    height: 100px;
+    width: 120px;
+    background-color: lightblue;
+    border-radius: 100%;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    display: block;
+
+
+
+}
+.imgci{
+    height: 50px;
+    width: 70px;
+    border-radius: 100%;
+    position:absolute;
+    top: 25px;
+    left: 20px;
+}
+.textm{
+    height: 130px;
+    width: 300px;
+    margin-top: 18px;
+    display: inline-block;
+}
+.h30{
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.lor3{
+    padding-top: 20px;
+    word-spacing: 5px;
+}
+.det{
+    color: blue;
+}
+</style>
+<body>
+        <nav id="navbar">
+            <div id="logo">
+                <div id="logocircle"></div>
+                <div id="squre"></div>
+                <p id="logoline"> Your Logo</p>
+            </div>
+            <ul id="home">
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li> About</li>
+                <li>Contact</li>
+                <li><button class="blog">Blog </button></li>
+            </ul>
+            <div id="search">
+                <p id="searchtex">Search</p> <img src="./img/search.png" alt="search icon" id="search1">
+            </div>
+        </nav>
+
+    <section id="img1"><img src="./img/img1.jpg" alt="background img" class="img1">
+        <section id="cent" >
+            <h1 id="good">GOOD DESIGN IS GOOD BUSINESS</h1>
+            <P class="good">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur doloribus soluta
+                iusto in eveniet. <br> Sed, aliquam quisquam sint repellat nulla, fugiat sequi rerum minima quibusdam amet,
+                molestiae blanditiis at?</P>
+                <button id="learn"> LEARN MORE</button>
+        </section>
+        <section id="circleimg1"> <div class="circleimg1"></div>
+            <div class="circleimg1"></div>
+            <div class="circleimg1"></div>
+            <div id="redcircle" class="circleimg1"></div>
+            <div  class="circleimg1"></div></section>
+            <button id="ours">OUR SERVICES</button>
+    </section>
+
+    <section id="section2">
+            <span class="list">
+                <div class="imgci2"> <img src="./img/lap.png" alt="Web DESIGN" class="imgci"></div>
+                <div class="textm">
+                    <h3 class="h30">Web Design</h3>
+                    <p class="lor3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate animi in ea blanditiis
+                        ipsa? <st class="det">Details.</st>
+                    </p>
+                </div>
+            </span>
+            <span class="list">
+                <div class="imgci2"><img src="./img/opt.png" alt="Optimize" class="imgci"></div>
+                <div class="textm">
+                    <h3 class="h30">Search Optimize</h3>
+                    <p class="lor3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate animi in ea blanditiis
+                        ipsa? <st class="det">Details.</st>
+                    </p>
+                </div>
+            </span>
+            <span class="list">
+                <div class="imgci2"><img src="./img/shop.png" alt="shop" class="imgci"></div>
+                <div class="textm">
+                    <h3 class="h30">Online Shopping</h3>
+                    <p class="lor3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate animi in ea blanditiis
+                        ipsa? <st class="det">Details.</st>
+                    </p>
+                </div>
+            </span>
+            <span class="list">
+                <div class="imgci2"><img src="./img/like.png" alt="like" class="imgci"></div>
+                <div class="textm">
+                    <h3 class="h30">Social Media</h3>
+                    <p class="lor3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate animi in ea blanditiis
+                        ipsa? <st class="det">Details.</st>
+                    </p>
+                </div>
+            </span>
+</section> 
+</body>
+</html>

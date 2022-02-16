@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd assignment</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: black;
+        }
+        .container{
+            width: 50%;
+            height: 1200px;
+            background-color:#ececec;
+            margin: auto;
+        }
+        .box_container{
+            width: 100%;
+            height: 270px;
+                
+            
+        }
+        .box1{
+            width: fit-content;
+            margin: auto;
+            padding-top:40px;
+        }
+        .box{
+        width:200px;
+        height: 200px;
+        background: white;
+        position: relative;
+        display: inline-block;
+        margin-left: -30px;
+        vertical-align: top;
+    }
+    #box2{
+        position: relative;
+        margin-left: 20px;
+        box-shadow: 0 6px 9px 1px darkslategrey;
+
+    }
+    .circle{
+        width: 100px;
+        height: 100px;
+        border: 5px solid seagreen;
+        border-radius: 100px;
+        border-top-color:gainsboro;
+        border-left-color: gainsboro;
+        position: relative;
+        transform: rotate(-35deg);
+        top: 30px;
+        left: 40px;
+    }
+    #box2 b{
+        position: absolute;
+        left: 80px;
+        top: 77px;
+    }
+     .order_box{
+         width: 100%;
+         height: 50px;
+         border-top: 2px solid gray;
+         position: absolute;
+         bottom: 0px;
+         
+     } 
+     .order{
+         color: black;
+         font-size: 30px;
+         
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+     }
+     .doted{
+         width: 10%;
+         height: 50px;
+         display: inline-block;
+         position: relative;
+         left: 170px;
+         top: 5px;
+
+         
+     }
+     .dot{
+         margin-top: 5px;
+         width: 7px;
+         height: 7px;
+         background-color: black;
+         border-radius: 10px;  
+     }
+     .task{
+         width: 100%;
+         height: 40px;
+         display: inline-block;
+     }
+     .task h4{
+         width: 50%;
+         color:black;
+         font-size: 20px;
+         margin-top: 5%;
+         margin-left: 7px;
+         display: inline-block;
+        
+     }
+     .task b{
+         display: inline-block;
+         color: black;
+         position: relative;
+         left: 65px;
+     }
+     .para{
+         width: 100%;
+         height: 40px;
+     }
+     .para p{
+         margin-top: 20px;
+         font-family: 'Times New Roman', Times, serif;
+         font-size: normal;
+         margin-left: 7px;
+     }
+     .btn{
+         width: 100%;
+         height: 60px;
+     }
+     .btn a{
+         text-decoration: none;
+         color: white;
+         display: inline-block;
+         margin-top: 10px;
+         margin-left: 6px;
+         background-color: rgb(56, 56, 252);
+         padding: 10px;
+     }
+     /* End body of box
+
+     start body of icons */
+
+     .icon_body{
+         width: 100%;
+         height: 220px;
+     }
+     .icon{
+         width: 100%;
+         height: auto;
+         margin-left: 10px;
+     }
+     .icon1 img{
+         margin-left: 80px;
+         margin-top: 20px;
+         font-size: 20px;
+         width: 50px;
+         height:50px;
+     }
+     .icon2 img{
+         width: 50px;
+         height: 50px;
+         margin-left: 80px;
+         margin-top: 60px;
+     }
+     /* icons css body end 
+     buttons body start */
+     .button_body{
+        width: 90%;
+        height: 200px;
+        margin: auto;
+       background-color: #fff;
+     }
+     .button_top{
+         width: 100%;
+         height: auto;
+         display: flex;
+     }
+     .button{
+         margin-top: 30px;
+         margin-left: 35px;
+         padding: 10px;
+     }
+     #btn1{
+         background-color: #008CBA;
+         color: white;
+     }
+     #btn2{
+         background-color: rgb(236, 160, 18);
+         color: white;
+     }
+     #btn3{
+         background-color: #f44336;
+         color: white;
+     }
+     #btn4{
+         background-color: #4CAF50;
+         color: white;
+     }
+     .button_under{
+         width: 100%;
+         height: auto;
+         display: flex;
+     }
+     .buttons{
+         margin-top: 50px;
+         margin-left: 35px;
+         padding: 10px;
+     }
+     #btn5{
+         background-color: #e7e7e7;
+         color: #008CBA;
+     }
+     #btn6{
+         color: rgb(236, 160, 18);;
+     }
+     #btn7{
+         color: #f44336;
+     }
+     #btn8{
+         color:#4CAF50 ;
+     }
+/* 
+     button of body end
+
+     body for form start */
+     .headings{
+         width: 90%;
+         height: 450px;
+         position: relative;
+         top: 40px;
+         margin: auto;
+         background-color: #fff;
+     }
+     .chqoor{
+         display: flex;
+         
+     }
+     .chqoor img{
+         width:50px;
+         height: 50px;
+         margin-left: 50px;
+         margin-top: 30px;
+     }
+     .message{
+         display: flex;
+         
+     }
+     .message img{
+         width:50px;
+         height: 50px;
+         margin-left: 50px;
+         margin-top: 25px;
+     }
+     .inbox{
+         display: flex;
+         
+     }
+     .inbox img{
+         width:50px;
+         height: 50px;
+         margin-left: 50px;
+         margin-top: 25px;
+     }
+     .squar{
+         display: flex;
+         
+     }
+     .squar img{
+         width:50px;
+         height: 50px;
+         margin-left: 50px;
+         margin-top: 25px;
+     }
+     .click{
+         display: flex;
+         
+     }
+     .click img{
+         width:50px;
+         height: 50px;
+         margin-left: 50px;
+         margin-top: 20px;
+     }
+     .heading{
+         width: 75%;
+         height: 50px;
+         margin-top: 30px;
+         margin-left: 20px;
+         border-bottom: 1px solid gray;
+     }
+     .heading h2{
+         margin: 0%;
+         
+     }
+     .heading p{
+         margin: 0%;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box_container">
+           <div class="box1">
+                <div class="box" >
+                    <div class="text">
+                        <div class="task">
+                            <h4>Task Bar</h4>
+                            <b>X</b>
+                        </div>
+                        <div class="para">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box2">
+                    <div class="circle"></div>
+                    <b>53%</b>
+                    <div class="order_box">
+                        <div class="order">Order</div>
+                        <div class="doted">
+                             <div class="dot"></div>
+                             <div class="dot"></div>
+                             <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- End the body of box -->
+
+    <!-- Start body of icons -->
+    <div class="icon_body">
+       <div class="icon">
+        <div class="icon1">
+            <img src="images/1.PNG" alt="">
+            <img src="images/2.PNG" alt="">
+            <img src="images/3.PNG" alt="">
+            <img src="images/4.PNG" alt="">    
+        </div>
+        <div class="icon2">
+            <img src="images/5.PNG" alt="">
+            <img src="images/6.PNG" alt="">
+            <img src="images/7.PNG" alt="">
+            <img src="images/8.PNG" alt="">
+        </div>
+       </div>
+    </div>
+    <!-- icons body is end
+
+    button body start -->
+    <div class="button_body">
+        <div class="button_top">
+            <div class="button" id="btn1">PRIMARY</div>
+            <div class="button" id="btn2">WARNING</div>
+            <div class="button" id="btn3">DANGER</div>
+            <div class="button"id="btn4">SUCCESS</div>
+        </div>
+        <div class="button_under">
+            <div class="buttons" id="btn5">PRIMARY</div>
+            <div class="buttons" id="btn6">WARNING</div>
+            <div class="buttons" id="btn7">DANGER</div>
+            <div class="buttons"id="btn8">SUCCESS</div>
+        </div>
+    </div>
+    <!-- button body end
+    
+    body of form start -->
+        <div class="headings">
+            <div class="chqoor">
+                <img src="images/9.PNG" alt="">
+                <div class="heading">
+                    <h2>Heading</h2>
+                    <p>Beatae quam rerum vero suscipit eius minus voluptates.</p>
+                </div>
+            </div>
+            <!-- message  body -->
+            <div class="message">
+                <img src="images/10.PNG" alt="">
+                <div class="heading">
+                    <h2>Heading</h2>
+                    <p>Fuga nesciunt voluptates rem occaecti sequi.</p>
+                </div>
+            </div>
+                <!-- indox body -->
+                <div class="inbox">
+                    <img src="images/11.PNG" alt="">
+                    <div class="heading">
+                        <h2>Heading</h2>
+                        <p>Rerum aut facilis itaque dolor autem commodi ullam id nihil.</p>
+                    </div>
+                </div>
+                <!-- squar body  -->
+                <div class="squar">
+                    <img src="images/12.PNG" alt="">
+                    <div class="heading">
+                        <h2>Heading</h2>
+                        <p>Veniam ex repellendus eum et at.</p>
+                    </div>
+                </div>
+                <!-- click body -->
+                <div class="click">
+                    <img src="images/13.PNG" alt="">
+                    <div class="heading">
+                        <h2>Heading</h2>
+                        <p>Dolores aperiam autem molestiae ad enim omnis.</p>
+                    </div>
+                </div>
+        </div>
+</div>
+</body>
+</html>

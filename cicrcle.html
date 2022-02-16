@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+@keyframes move {
+    
+0%{
+    left:0%
+}
+
+
+50%{
+
+    left: 90%;
+}
+100%{
+    left: 0%;
+}
+
+}   
+
+        #main{
+            height: 500px;
+            width: 500px;
+            margin-left: 350px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 100%;
+            
+        }
+        
+        #circle{
+
+            animation: move 3s ease-in-out  0s;
+            animation-iteration-count: infinite;
+            /* transform: 5s linear 0s; */
+
+            height: 50px;
+            width: 50px;
+            background-color: chocolate;
+            border-radius: 100%;
+            position: relative;
+            margin-top: 220px;
+            animation-fill-mode: backwards;
+            /* position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 100px;
+            right: 20px; */
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="main">
+<div id="circle">
+
+</div>
+
+</div>
+    
+</body>
+</html>

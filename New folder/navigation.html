@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            margin: 0px;
+            background-image: url(./background.jfif);
+            /* object-fit: cover; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header{
+            /* border: 1px solid green; */
+            width: 100vw;
+            height: 75px;
+            display: flex;
+            background-color: whitesmoke;
+            border-radius: 25px;
+        }
+        .h1{
+            /* border: 1px solid black; */
+            /* width: 400px;
+            height: 99px; */
+            width: 20vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .h2{
+            /* border: 1px solid black; */
+            /* width: 800px;
+            height: 99px; */
+            width: 60vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .h3{
+            /* border: 1px solid black; */
+            /* width: 400px;
+            height: 99px; */
+            width: 20vw;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+        }
+        #ol{
+            display: flex;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            line-height: 54px;
+            
+        }
+        .li{
+            /* display: inline-block; */
+            margin-left: 30px;
+            margin-right: 20px;
+        }
+        .h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #buy{
+            padding: 10px;
+            width: 100px;
+            background-color: orange;
+            color: whitesmoke;
+            border-radius: 25px;
+            text-align: center;
+            /* border: 1px solid gray; */
+        }
+
+        #main-section{
+            display: flex;
+            height: 500px;
+            width: 100vw;
+            /* border: 1px solid gray; */
+
+        }
+
+        #col1{
+
+        width: 33%;
+        height: 100%;
+            /* border: 1px solid brown; */
+        }
+        #col2{
+        width: 33%;
+        height: 100%;
+            /* border: 1px solid brown; */
+        }
+        #col3{
+        width: 33%;
+        height: 100%;
+            /* border: 1px solid brown; */
+        }
+        .col1-child1{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: grid;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .col1-child2{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: grid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col1-child3{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: grid;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        /* .col1-child:nth-child(1){
+            width:60px;
+            height: 20px;
+            background-color: whitesmoke;
+        } */
+        .p1{
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            line-height: 75px;
+            width: 250px;
+            height: 80px;
+            border-radius: 50px;
+            background-color: whitesmoke;
+        }
+        /* .p2{
+            
+            font-size: 30px;
+            text-align: center;
+            line-height: 90px;
+            width: 300px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: whitesmoke;
+        }
+        .p3{
+            font-size: 30px;
+            text-align: center;
+            line-height: 90px;
+            width: 300px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: whitesmoke;
+        } */
+        
+        
+        
+        img{
+            margin-top: 60px;
+            margin-left: 60px;
+            width: 75%;
+            height: 75%;
+            border-radius: 50%;
+        }
+        
+        
+        
+        
+        
+        .col3-child{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: grid;
+        }
+        .col3-child1{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: grid;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .col3-child2{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: grid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col3-child3{
+            height: 33%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: grid;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+        }
+        h5{
+            text-align: center;
+            color: brown;
+        }
+        </style>
+
+</head>
+
+<body>
+<header id="header">
+<div class="h1">
+    
+    <h1>J.carter</h1>
+
+
+</div>
+<div class="h2">
+    <ol id="ol">
+        <li class="li">Works</li>
+        <li class="li">Testominials</li>
+        <li class="li">FAQ</li>
+        <li class="li">Contant</li>
+        <li class="li">More</li>
+    </ol>
+</div>
+<div class="h3">
+    <div id="buy">Buy Template</div>
+</div>
+</header>
+
+<section id="main-section">
+
+    <Div id="col1">
+        <div class="col1-child1">
+            <!-- <div>UI/UX</div> -->
+            <p class="p1">UI/UX</p>
+        </div>
+        <div class="col1-child2">
+            <p class="p1">Illustration</p>
+            
+        </div>
+        <div class="col1-child3">
+            
+            <p class="p1" style="width: 100px; border-radius: 100%;">PNG</p>
+        </div>
+    </Div>
+    <Div id="col2">
+        <img src="./person.jfif" alt="">
+    </Div>
+    <Div id="col3">
+        <div class="col3-child1">
+            <p class="p1">Hi There!</p>
+            
+        </div>
+        <div class="col3-child2">
+            <p class="p1">Photography</p>
+            
+        </div>
+        <div class="col3-child3">
+            <p class="p1">Request a Code</p>
+            
+        </div>
+    </Div>
+
+</section>
+<footer> 
+    <div class="foot">
+        <h5>HI THERE, I'M JAMES</h5>
+        <H1>A <strong>PRODUCT DESIGNER</strong> WITH PASSION TO WEB</H1>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
